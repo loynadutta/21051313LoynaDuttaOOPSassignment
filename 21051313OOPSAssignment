@@ -1,0 +1,149 @@
+
+
+#include<iostream>
+#include<string.h>
+
+#include<stdlib.h>
+
+using namespace std;
+int totalmarks
+class Enter {
+
+public:
+
+char pass[20], name[30];
+
+Enter(){
+
+cout<<"Login Page"<<endl;
+
+cout<<"Enter the username: "<<endl;
+
+cin.getline(name,30);
+
+cout<<"Enter the password: "<<endl;
+
+cin.getline(pass,30);
+
+cout<<Welcome to KIIT SAP portal<<endl;
+
+}
+};
+class Attendance{
+	private:
+		presdays;   //to make use of friend function to call pvt member
+	public:
+		int absdays,abswithexcusedays;
+		Attendance(int m,int n,int o){
+			absdays=m;
+			presdays=n;
+			abswithexcusedays=o;
+		}
+	    public:
+		zone(int adone){cout>>" no. of days student absent:">>ad;
+			if(ad>5 && ad<=10){
+				cout>>"Greenzone";
+			}
+		}
+		zone(int adtwo){cout>>"no. of days students absent:">>adtwo;
+		if(adtwo>10 && adtwo<=15){
+			cout>>"Yellowzone";
+		}
+	}
+		zone(int adthree){cout>>"no. of days student is absent:">>adthree;
+		if(adthree>15){
+		cout>>"Redzone";
+	}
+		}
+		friend void benefit(Attendance &a);
+		void smarks(mark);
+		
+	};
+		
+			friend void benefit()(Attendance &a){
+			if(a.presdays=100){
+				cout>>"Students gets a mcdonalds happy meal!"
+			}
+		};
+		class Marks:public Attendance{
+		public:
+		int marks;
+		void smarks(){cout>>"enter marks of student:">>endl;
+		cin>>marks
+			if (marks>90 && presdays<50){
+				cout<<"exempted from redzone,you are safe";
+				
+			}
+			
+		}
+		
+			
+		};
+		try{
+			if(totalmarks>=100 && totalmarks<=500)
+			throw 1;
+				else{
+					cout"fail";
+					
+				}catch{int z){
+					if(totalmarks<100){
+					z=100-totalmarks;
+					cout>>"you need">>z>>"marks to pass";
+				}
+				}
+				
+			}
+		};
+		int main(){
+			Attendance s1,s2,s3;
+			s1.zone(3);
+			s2.zone(12);
+			s3.zone(20);
+			s1.benefit();
+			void smarks();
+			
+			int choice;
+
+while(1){
+
+cout<<endl<<endl<<"1.Give Scholar Certif"<<" "<<"2.Give Consolation Certif"<<" "<<"3.Give Failure Certif"<<" "<<"4.Exit"<<endl;
+
+cout<<endl<<"What should be done? "<<endl;
+
+cin>>choice;
+
+switch (choice) {
+
+case 1:{
+
+if(s1.zone());
+
+break;
+
+}
+
+case 2:{
+
+if(s2.zone());
+break;
+
+case 3:
+	if(s3.zone());
+break;
+
+}
+
+case 4:
+
+cout<<endl<<"Thank You for using our student portal"<<endl;
+
+cout<<endl<<"GOOD DAY!"<<endl;
+
+exit(0) ;
+
+}
+
+}
+
+}
+	
